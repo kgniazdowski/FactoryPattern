@@ -1,0 +1,14 @@
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.csproj.CoreCompileInputs.cache
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\obj\Debug\AbstractFactory.csproj.CoreCompileInputs.cache
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\kgnia\Documents\Studia\Wzorce Projektowe\Factory\AbstractFactory\obj\Debug\AbstractFactory.pdb
