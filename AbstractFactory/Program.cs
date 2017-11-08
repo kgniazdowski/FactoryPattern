@@ -43,7 +43,6 @@ namespace AbstractFactory
             Console.WriteLine(goodQuerySimple.GetSelect());
 
 
-
             Console.ReadKey();
         }
     }
