@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AbstractFactory.Model;
+﻿using AbstractFactory.Model;
 
 namespace AbstractFactory
 {
-    class ContractorFactory : IQueryFactory
+    class ContractorAbstractFactory : IQueryAbstractFactory
     {
         public Insert GenerateInsert(IEntity entity)
         {

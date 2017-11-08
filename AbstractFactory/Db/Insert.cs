@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AbstractFactory.Db;
+using AbstractFactory.Model;
 
 namespace AbstractFactory
 {
-    public class Insert
+    public class Insert : Query
     {
-        public string Value { get; set; }
+        public override void PrepareQuery(IEntity entity)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

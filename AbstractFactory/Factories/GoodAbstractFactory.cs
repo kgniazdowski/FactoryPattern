@@ -1,13 +1,8 @@
 ﻿using AbstractFactory.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    class GoodFactory : IQueryFactory
+    class GoodAbstractFactory : IQueryAbstractFactory
     {
         public Insert GenerateInsert(IEntity entity)
         {

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AbstractFactory.Db;
 
 namespace AbstractFactory
 {
-    public class Select
+    public class Select : Query
     {
-        public string Value { get; set; }
     }
 }

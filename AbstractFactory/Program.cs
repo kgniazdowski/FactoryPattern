@@ -1,9 +1,5 @@
 ﻿using AbstractFactory.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
@@ -13,12 +9,12 @@ namespace AbstractFactory
         {
             //---Abstract Factory---
             Console.WriteLine("---Abstract Factory---");
-            IQueryFactory goodQueryFactory = new GoodFactory();
+            IQueryAbstractFactory goodQueryFactory = new GoodAbstractFactory();
             DbQuery goodQuery = new DbQuery(goodQueryFactory, new Good { Name = "Krakowska sucha" });
             Console.WriteLine(goodQuery.GetInsert());
             Console.WriteLine(goodQuery.GetSelect());
 
-            IQueryFactory contractorQueryFactory = new ContractorFactory();
+            IQueryAbstractFactory contractorQueryFactory = new ContractorAbstractFactory();
             DbQuery contractorQuery = new DbQuery(contractorQueryFactory, new Contractor { Name = "Atlas" });
             Console.WriteLine(contractorQuery.GetInsert());
             Console.WriteLine(contractorQuery.GetSelect());

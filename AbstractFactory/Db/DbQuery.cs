@@ -9,7 +9,7 @@ namespace AbstractFactory
         private Insert _insert;
         private Select _select;
 
-        public DbQuery(IQueryFactory queryFactory, IEntity entity)
+        public DbQuery(IQueryAbstractFactory queryFactory, IEntity entity)
         {
             _insert = queryFactory.GenerateInsert(entity);
             _select = queryFactory.GenerateUpdate(entity);
