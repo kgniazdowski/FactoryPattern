@@ -42,16 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factories\ContractorFactory.cs" />
+    <Compile Include="Db\Query.cs" />
+    <Compile Include="Factories\ContractorAbstractFactory.cs" />
     <Compile Include="Db\ContractorInsert.cs" />
     <Compile Include="Db\ContractorSelect.cs" />
     <Compile Include="Db\DbQuery.cs" />
-    <Compile Include="Factories\GoodFactory.cs" />
+    <Compile Include="Factories\GoodAbstractFactory.cs" />
+    <Compile Include="Factories\IQueryFactory.cs" />
     <Compile Include="Factories\SimpleFactory.cs" />
     <Compile Include="Db\GoodInsert.cs" />
     <Compile Include="Db\GoodSelect.cs" />
     <Compile Include="Db\Insert.cs" />
-    <Compile Include="Factories\IQueryFactory.cs" />
+    <Compile Include="Factories\IQueryAbstractFactory.cs" />
     <Compile Include="Model\Contractor.cs" />
     <Compile Include="Model\Good.cs" />
     <Compile Include="Model\IEntity.cs" />
