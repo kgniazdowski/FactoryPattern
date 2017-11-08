@@ -20,8 +20,8 @@ namespace AbstractFactory
             Console.WriteLine(contractorQuery.GetInsert());
             Console.WriteLine(contractorQuery.GetSelect());
 
-            //---Metoda odtwórcza---
-            Console.WriteLine("\n\n---Metoda odtwórcza---");
+            //---Metoda wytwórcza---
+            Console.WriteLine("\n\n---Metoda wytwórcza---");
             IQueryFactory factory = new ContractorFactory();
             DbQuery db = new DbQuery(factory, new Contractor { Name = "M&H" });
             Console.WriteLine(db.GetInsert());
