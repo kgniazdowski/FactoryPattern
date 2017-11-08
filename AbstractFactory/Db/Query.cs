@@ -7,6 +7,7 @@ namespace AbstractFactory.Db
     {
         public string Value { get; set; }
 
-        public abstract void PrepareQuery(IEntity entity);
+        public abstract void PrepareQuery(Good good);
+        public abstract void PrepareQuery(Contractor contractor);
     }
 }

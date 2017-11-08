@@ -6,8 +6,8 @@ namespace AbstractFactory
 {
     public class DbQuery
     {
-        private Insert _insert;
-        private Select _select;
+        private Insert _insert = new Insert();
+        private Select _select = new Select();
 
         public DbQuery(IQueryAbstractFactory queryFactory, IEntity entity)
         {
@@ -15,6 +15,12 @@ namespace AbstractFactory
             _select = queryFactory.GenerateUpdate(entity);
         }
 
+        public DbQuery(IQueryFactory queryFactory, IEntity entity)
+        {
+            queryFactory.PrepareQuery(entity, ref _insert);
+            queryFactory.PrepareQuery(entity, ref _select);
+        }
+        
         public DbQuery(IEntity entity)
         {
             SimpleFactory factory = new SimpleFactory();

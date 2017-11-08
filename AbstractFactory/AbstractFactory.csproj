@@ -47,7 +47,9 @@
     <Compile Include="Db\ContractorInsert.cs" />
     <Compile Include="Db\ContractorSelect.cs" />
     <Compile Include="Db\DbQuery.cs" />
+    <Compile Include="Factories\ContractorFactory.cs" />
     <Compile Include="Factories\GoodAbstractFactory.cs" />
+    <Compile Include="Factories\GoodFactory.cs" />
     <Compile Include="Factories\IQueryFactory.cs" />
     <Compile Include="Factories\SimpleFactory.cs" />
     <Compile Include="Db\GoodInsert.cs" />

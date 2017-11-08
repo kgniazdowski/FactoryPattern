@@ -1,14 +1,11 @@
 ﻿using AbstractFactory.Db;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AbstractFactory.Model;
 
 namespace AbstractFactory.Factories
 {
-    interface IQueryFactory
+    public interface IQueryFactory
     {
-        Query PrepareQuery();
+        void PrepareQuery(IEntity entity, ref Insert query);
+        void PrepareQuery(IEntity entity, ref Select query);
     }
 }

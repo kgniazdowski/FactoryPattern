@@ -1,4 +1,5 @@
-﻿using AbstractFactory.Model;
+﻿using AbstractFactory.Factories;
+using AbstractFactory.Model;
 using System;
 
 namespace AbstractFactory
@@ -7,8 +8,8 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            //---Abstract Factory---
-            Console.WriteLine("---Abstract Factory---");
+            //---Fabryka Abstrakcyjna---
+            Console.WriteLine("---Fabryka abstrakcyjna---");
             IQueryAbstractFactory goodQueryFactory = new GoodAbstractFactory();
             DbQuery goodQuery = new DbQuery(goodQueryFactory, new Good { Name = "Krakowska sucha" });
             Console.WriteLine(goodQuery.GetInsert());
@@ -19,8 +20,21 @@ namespace AbstractFactory
             Console.WriteLine(contractorQuery.GetInsert());
             Console.WriteLine(contractorQuery.GetSelect());
 
-            //---Simple Factory---
-            Console.WriteLine("\n\n---Simple Factory---");
+            //---Metoda odtwórcza---
+            Console.WriteLine("\n\n---Metoda odtwórcza---");
+            IQueryFactory factory = new ContractorFactory();
+            DbQuery db = new DbQuery(factory, new Contractor { Name = "M&H" });
+            Console.WriteLine(db.GetInsert());
+            Console.WriteLine(db.GetSelect());
+
+            factory = new GoodFactory();
+            db = new DbQuery(factory, new Good { Name = "Kaszanka" });
+            Console.WriteLine(db.GetInsert());
+            Console.WriteLine(db.GetSelect());
+
+
+            //---Prosta Fabryka---
+            Console.WriteLine("\n\n---Prosta fabryka---");
             DbQuery goodQuerySimple = new DbQuery(new Good { Name = "Mielonka" });
             Console.WriteLine(goodQuerySimple.GetInsert());
             Console.WriteLine(goodQuerySimple.GetSelect());
